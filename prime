@@ -3,7 +3,7 @@
 
 int main() {
     int i,j,n;
-    int c=0,sum=0;
+    int c=0,sum=0;    // c is used for counting
     scanf("%d",&n);
     for(i=2;i<=n;i++){
         for(j=2;j<=i;j++){
@@ -13,9 +13,9 @@ int main() {
          if(i==j)
       {
          printf("%d is a prime number\n",i);
-         sum+=i;
+         sum+=i;   // sum of prime numbers
          c++;}
-        if(c==5)
+        if(c==5) //count upto 5 primenumbers then break
         break;
     }
     printf("%d\n",sum);
